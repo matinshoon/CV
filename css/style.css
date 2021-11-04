@@ -56,7 +56,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -72,25 +72,25 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-header {
-  margin-top: -140px;
+footer {
+  margin-top: -160px;
   height: 50px;
 }
 
-header ul { 
-  margin: 150px auto 0; 
+footer ul { 
+  margin: 80px auto 0; 
   padding: 0; 
   list-style: none; 
   display: table;
   width: 200px;
   text-align: center;
 }
-header li { 
+footer li { 
   display: table-cell; 
   position: relative; 
   padding: 15px 0;
 }
-header a {
+footer a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -100,7 +100,7 @@ header a {
   padding: 15px 20px;
   position: relative;
 }
-header a:after {    
+footer a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -112,7 +112,7 @@ header a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-header a:hover:after { 
+footer a:hover:after { 
   width: 100%; 
   left: 0; 
 }
@@ -186,7 +186,7 @@ header a:hover:after {
   box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img.cd-dev {
-  background: #0084ff;
+  background: #00aeff;
 }
 .cd-timeline-img.cd-graphic {
   background: #b700ff;
@@ -1139,3 +1139,34 @@ header a:hover:after {
   transform: translate(-50%, -50%);
   z-index: -1;
 } */
+
+.underlined-txt {
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 200px;
+  text-align: center;
+}
+
+.underlined-txt-graphic {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 149, 248);
+  text-decoration-thickness: 2.5px;
+  color: #ffffff;
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+  cursor: progress;
+}
+
+.underlined-txt-developing {
+  text-decoration: underline;
+  text-decoration-color: rgb(248, 37, 255);
+  text-decoration-thickness: 2.5px;
+  color: #ffffff;
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+  cursor: progress;
+}
