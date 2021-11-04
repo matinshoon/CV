@@ -1,5 +1,3 @@
-/* Please ❤ this if you like it! */
-
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
@@ -485,23 +483,34 @@ body.nav-active .nav__list-item:nth-child(10) {
 /* my pic */
 
 .mePic {
-    z-index: 1;
+    /* z-index: 1; */
     width: 100%;
     max-width: 700px;
     margin-left: 500px;
 }
 
-.meAbout {
-    z-index: -1;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    float:left;
-    text-align-last: center;
-    font-size: 1vw;
+
+@media (min-width: 320px) {
+    .meAbout{
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align-last: center;
+        font-size: 1vw;
+    }
 }
 
+@media (min-width: 900px) {
+    .meAbout{
+        width: 100%;
+        max-width: 30%;
+        margin-left: 8vw;
+        margin-right: auto;
+        text-align-last: center;
+        font-size: 1vw;
+    }
+}
 
 /* Noise */
 
