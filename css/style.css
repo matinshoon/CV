@@ -505,19 +505,39 @@ footer a:hover:after {
   -webkit-align-items: center;
 }
 
- .experiment-title {
-  outline: none;
-  font-size: 80px;
-  text-align: center;
-  font-family: "Roboto", monospace;
-  min-height: 10vw;
-  max-width: 80vw;
-  min-width: 10vw;
-  background: url('https://s4.uupload.ir/files/wave_ahp.gif');	
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
+@media (min-width: 320px) {
+  .experiment-title {
+    outline: none;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Roboto", monospace;
+    min-height: 10vw;
+    max-width: 80vw;
+    min-width: 10vw;
+    background: url('https://s4.uupload.ir/files/wave_ahp.gif');	
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
 }
+
+@media (min-width: 900px) {
+  .experiment-title {
+    outline: none;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Roboto", monospace;
+    min-height: 10vw;
+    max-width: 80vw;
+    min-width: 10vw;
+    background: url('https://s4.uupload.ir/files/wave_ahp.gif');	
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+}
+
+
 .portfolio-experiment .experiment-title,
 .portfolio-experiment .experiment-title * {
   -webkit-animation: cray 6s infinite steps(50);
