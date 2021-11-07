@@ -490,11 +490,44 @@ body.nav-active .nav__list-item:nth-child(10) {
     margin-left: 500px;
 }
 
-.mePicWork {
-  /* z-index: 1; */
-  position: relative;
-  width: 100%;
-  max-width: 2816px;
+
+
+@media (min-width: 320px) {
+  .mePicWork {
+    background-image: url("../images/idea.gif");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat, repeat;
+  }
+}
+
+@media (min-width: 900px) {
+  .mePicWork {
+    background-image: url("../images/cover.png");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat, repeat;
+    position: relative;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  .metextWork {
+    margin-top: 100vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .metextWork {
+    margin-top: 100vw;
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+.metextWork h2 {
+  font-size: 20px;
+  font-weight: 1000;
 }
 
 
@@ -527,7 +560,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     pointer-events: none;
     opacity: 0.1;
@@ -1123,9 +1156,11 @@ Modules - reusable parts of our design
   /* Progress */
 
   .demo-preview {
+    margin-top: 200px;
     padding-top: 100px;
     padding-bottom: 10px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     width: 70%;
     text-align: left;
   }
@@ -1498,14 +1533,36 @@ Modules - reusable parts of our design
 /* codepen section */
 
 .codepen-section {
+  margin-top: 200px;
   display: block;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  margin: auto;
-  width: 50%;
-  max-height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  height: 1200px;
 }
 
 .codepens {
+  display: inline;
+  height: 100px;
+  padding: 5px;
   margin-top: 30px;
+}
+
+/* abput me section */
+
+
+
+
+@media (min-width: 320px) {
+  .aboutMe {
+    font-weight: 1000;
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutMe {
+    font-weight: 1000;
+    font-size: 1vw;
+  }
 }
