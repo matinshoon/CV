@@ -1270,8 +1270,8 @@ Modules - reusable parts of our design
     background-color: #29B6F6;
   }
   
-  .progress-bar-warning {
-    background-color: #FFD600;
+  .progress-bar-developing {
+    background-color: #8c00a8;
   }
   
   .progress-bar-danger {
